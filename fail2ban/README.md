@@ -10,17 +10,6 @@ Create a new configuration file for SSH:
 
 sudo vim  /etc/fail2ban/jail.d/sshd.conf
 
-Add the following content to the file:
-
-[sshd]
-enabled = true
-port = ssh
-filter = sshd
-logpath = /var/log/auth.log
-maxretry = 10
-findtime = 600
-bantime = 3600
-
 
 Create the sshd filter by copying the default filter:
 
@@ -34,19 +23,4 @@ To view the Fail2Ban logs, you can use the following command:
 
 sudo journalctl -u fail2ban.service
 
-
-# Github Ip address fro nOt Blocking
-[sshd]
-enabled = true
-port = ssh
-filter = sshd
-logpath = /var/log/auth.log
-maxretry = 10
-findtime = 600
-bantime = 3600
-
-# Exclude specific IP address ranges from being blocked
-[Definition]
-failregex = ^%(__prefix_line)s(?:error: PAM: )?Authentication failure for .* from <HOST>( via \S+)?\s*$
-ignoreregex = 192\.168\.1\.\d+|10\.0\.0\.\d+  # Example: Exclude IP ranges 192.168.1.x and 10.0.0.x
 
