@@ -36,7 +36,7 @@ def scan_for_xss_vulnerabilities(url, payloads):
             print(f"Potential XSS vulnerability found at {injection_url}")
 
 def main():
-    url = input("https://cloudstudy0.godaddysites.com/: ")
+    url = "https://cloudstudy0.godaddysites.com"
     if not is_url_valid(url):
         print("Invalid URL. Exiting...")
         return
