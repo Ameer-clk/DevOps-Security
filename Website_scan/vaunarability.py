@@ -3,7 +3,7 @@ import requests
 
 def is_local_url(url):
     parsed_url = urllib.parse.urlparse(url)
-    return parsed_url.netloc == "" or parsed_url.netloc.startswith("localhost")
+    return parsed_url.scheme == "file"
 
 def is_within_app_directory(url, app_directory):
     parsed_url = urllib.parse.urlparse(url)
@@ -25,6 +25,6 @@ def check_url_vulnerability(url, app_directory):
         print(f"Error: {e}")
 
 # Example usage
-url = "http://localhost:8000/admin"
+url = "http://www.google.com/admin"
 app_directory = "/admin"
 check_url_vulnerability(url, app_directory)
