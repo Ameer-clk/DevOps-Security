@@ -25,6 +25,6 @@ def check_url_vulnerability(url, app_directory):
         print(f"Error: {e}")
 
 # Example usage
-url = "http://www.google.com/admin"
-app_directory = "/admin"
+url = "http://www.microsoft.com/en/us/default.aspx?redir=true"
+app_directory = "/en/us"
 check_url_vulnerability(url, app_directory)
