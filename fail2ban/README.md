@@ -27,7 +27,7 @@ enabled = true
 port = ssh
 filter = sshd
 logpath = /var/log/auth.log
-maxretry = 1 # Deafule use the 1 
+maxretry = 1 # Use the Default 1
 findtime = 600
 
 ```
