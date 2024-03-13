@@ -30,13 +30,17 @@ Fail2Ban is a tool designed to protect servers from brute force attacks by monit
 
 ## Restart Fail2Ban
 Restart the Fail2Ban service to apply the new configuration:
+   ```
+ systemctl retstart fail3ban
 
-
+ ```
 
 ## Viewing Logs
 To view Fail2Ban logs and monitor its activity, use the following command:
+ ```
+ vim /var/log/auth.log
 
-
+ ```
 
 ## Important Note
 - Ensure that you have appropriate permissions and backups before making changes to configuration files.
