@@ -21,6 +21,17 @@ Fail2Ban is a tool designed to protect servers from brute force attacks by monit
     ```
 2. In the configuration file, you can define rules and settings specific to SSH protection. Refer to Fail2Ban documentation for configuration options.
 
+ ```
+[sshd]
+enabled = true
+port = ssh
+filter = sshd
+logpath = /var/log/auth.log
+maxretry = 1 # Deafule use the 1 
+findtime = 600
+
+```
+
 ## SSHD Filter
 1. Create the SSHD filter by copying the default filter configuration:
     ```
