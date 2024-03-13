@@ -52,6 +52,11 @@ To view Fail2Ban logs and monitor its activity, use the following command:
  vim /var/log/auth.log
 
  ```
+## For running the fail2Ban use the Ansible-playbook for easy installation use this command:
+ ```
+ansible-plabook playbook.yml
+
+ ```
 
 ## Important Note
 - Ensure that you have appropriate permissions and backups before making changes to configuration files.
