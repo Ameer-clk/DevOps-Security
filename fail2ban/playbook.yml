@@ -1,0 +1,32 @@
+---
+- name: Install fail2ban
+  hosts: localhost  # Replace with your server group
+  become: true  # Requires root privileges
+
+  tasks:
+    - name: Update package cache
+      apt: 
+        update_cache: yes
+        cache_valid_time: 3600
+      when: ansible_os_family == "Debian"
+
+    - name: Update package cache
+      yum: 
+        name: update
+      when: ansible_os_family == "RedHat"
+
+    - name: Install fail2ban package
+      apt:
+        name: fail2ban
+      when: ansible_os_family == "Debian"
+
+    - name: Install fail2ban package
+      yum:
+        name: fail2ban
+      when: ansible_os_family == "RedHat"
+
+    - name: Enable and start fail2ban service
+      systemd:
+        name: fail2ban
+        enabled: yes
+        state: started
