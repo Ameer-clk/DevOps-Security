@@ -52,7 +52,6 @@ Each tool or configuration provided in this toolkit comes with detailed usage in
 ## Important Notes
 
 - **Educational Purposes**: All tools and configurations included in this toolkit are intended for educational purposes only. Always use them responsibly and with proper authorization.
-- **License**: This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Contributing
 
