@@ -27,7 +27,7 @@ Welcome to the Web Security Toolkit repository! This toolkit includes a collecti
 
 1. Clone this repository to your local machine:
   ```
-git clone https://github.com/your-username/web-security-toolkit.git
+https://github.com/Ameer-clk/Web-Security-Toolkit.git
 
  ```
 
