@@ -4,7 +4,6 @@ Welcome to the Web Security Toolkit repository! This toolkit includes a collecti
 
 ## Features
 
-- **Web Vulnerability Scanner**: A Python script that scans web pages for potential SQL injection and cross-site scripting (XSS) vulnerabilities.
 - **Fail2Ban Configuration**: Instructions for installing and configuring Fail2Ban on your server to protect against brute force attacks.
 - **Simple Port Scanner**: Another Python script for scanning open TCP ports on target hosts to identify potential security risks.
 
