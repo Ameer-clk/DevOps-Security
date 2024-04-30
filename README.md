@@ -36,6 +36,13 @@ https://github.com/Ameer-clk/Web-Security-Toolkit.git
 cd web-security-toolkit
 
  ```
+ bash DDos.sh
+
+ ```
+3. For Running the DDOS Attack prevention using the f fail3ban run:
+
+```
+bash 
 
 ## Usage
 
